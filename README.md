@@ -1,2 +1,2 @@
 ﻿# doolinExample
-<img src=".sample.png">
+<img src="./sample.png">
