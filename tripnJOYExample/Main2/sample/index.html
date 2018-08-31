@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style media="screen">
+    *{
+      box-sizing: border-box;
+    }
+    a:link, a:visited{
+      text-decoration: none;
+    }
+    ul{
+      list-style: none;
+    }
+    body{
+      width:100%;
+      height:100vh;
+      margin:0;
+      overflow: hidden;
+    }
+    body.backImage{
+      background-image: url('./media/backgroundImage.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 60%;
+    }
+    #header{
+      width:100%;
+      height:5vh;
+    }
+    #header a{
+      line-height: 5vh;
+      margin-right: 10px;
+      color:white;
+      float: right;
+    }
+    #header::after{
+      content:'';
+      clear: both;
+    }
+    #mainContent__wrap{
+      width:100%;
+      height:97vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #mainMenu__wrap{
+      width:100%;
+      height:17vh;
+    }
+    .mainMenu{
+      width:100%;
+      height:10vh;
+    }
+    #mainMenu__selectedOption{
+      height:100%;
+      display: flex;
+      background-color: rgba(188, 153, 131,0.5);
+    }
+    .selectedOption{
+      width:35vw;
+      align-content: space-between;
+    }
+    .selectedOption ul{
+      width:100%;
+      height:7vh;
+      line-height:7vh;
+      margin:1.5vh 0;
+      padding:0;
+      display: flex;
+    }
+    .selectedOption ul li{
+      width:100%;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 800;
+
+    }
+    .mainMenu__logowarp{
+      width:30vw;
+      height: 10vh;
+      text-align: center;
+      line-height: 10vh;
+      font-size: 25px;
+      font-weight: 600;
+      color:white;
+      text-shadow: 1px 1px 1px rgb(30,30,30);
+    }
+    #mainMenu__selectableOption{
+      width:100%;
+      height:45vh;
+      background-color: rgba(188, 153, 131,0.5);
+    }
+    .selectableOption{
+      width:35vw;
+      height: 45vh;
+      display: flex;
+    }
+
+    .selectableOption form{
+      width: 50%;
+      height: 45vh;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+    .selectableOption form label{
+      width:100%;
+      height:10vh;
+      line-height: 10vh;
+    }
+    .selectableOption form label input{
+      display: none;
+    }
+    .selectableOption form label span{
+      width:100%;
+      height:100%;
+      display: block;
+      margin: 0;
+      color:white;
+      font-size: 25px;
+    }
+    .selectableOption form label input:checked{visibility: visible;}
+    .selectableOption form label input:checked + span{
+      background-color: rgba(50,50,50,0.2);
+    }
+    #ok__button_wrap{
+      width:30vw;
+      height: 45vh;
+      line-height: 40vh;
+      display: flex;
+      align-items: center;
+    }
+    #ok__button_wrap a{
+      width:80%;
+      height:80%;
+      display: block;
+      margin:auto;
+      font-size: 20px;
+      font-weight:100;
+      color: white;
+      text-align: center;
+    }
+    #mainMenu__button{
+      width:100%;
+      height:7vh;
+    }
+    #mainMenu__button a {
+      display: block;
+      height:7vh;
+      width:5em;
+      margin: auto;
+      text-align: center;
+    }
+    /* #mainMenu__button:active{
+      display: none;
+    }
+    #mainMenu__button:active + #mainMenu__selectableOption{
+      display: flex;
+    } */
+    #mainMenu__button a i{
+      height:85%;
+      width:100%;
+      line-height: 7vh;
+    }
+    .none{
+      display: none;
+    }
+    .flex{
+      display: flex;
+    }
+    ul.text_mainColor,a.text_mainColor,i.text_mainColor{color: rgb(220, 143, 131);}
+    ul.text_subColorShadow,a.text_subColorShadow,i.text_subColorShadow{color: rgba(107, 117, 50,0.8);  text-shadow: 1.5px 1px 1px #222222;}
+    .material-icons.md-48 { font-size: 48px; }
+    .material-icons.md-60 { font-size: 60px; }
+    .material-icons.md-72 { font-size: 72px; }
+    </style>
+  </head>
+  <body class="backImage">
+
+<header id="header">
+  <a href="#">login</a>
+</header>
+
+<div id="mainContent__wrap">
+
+  <nav id="mainMenu__wrap">
+    <div class="mainMenu">
+          <div id="mainMenu__selectedOption">
+
+                <div class="selectedOption">
+                  <ul class="text_subColorShadow">
+                    <li>WHO</li>
+                    <li>WHERE</li>
+                  </ul>
+                </div>
+                <div class="mainMenu__logowarp">
+                  Trip&JOY
+                </div>
+                <div class="selectedOption">
+                  <ul class="text_subColorShadow">
+                    <li>WHAT</li>
+                    <li>WHEN</li>
+                  </ul>
+                </div>
+
+          </div>
+                  <div id="mainMenu__button">
+                        <a class="text_mainColor" href="#"><i class="material-icons md-48 text_mainColor">fingerprint</i>tap</a>
+                  </div>
+          <div id="mainMenu__selectableOption" class="none">
+
+                <div class="selectableOption">
+                  <form>
+                      <label for="a1_1"><input id="a1_1" type="radio" name="a" value="a1_1" checked><span> item </span></label><br/>
+                      <label for="a1_2"><input id="a1_2" type="radio" name="a" value="a1_2" > <span> item </span></label><br/>
+                      <label for="a1_3"><input id="a1_3" type="radio" name="a" value="a1_3" > <span> item </span> </label><br/>
+                  </form>
+                  <form>
+                      <label for="a2_1"><input id="a2_1" type="radio" name="a2" value="a2_1" checked> <span> item </span> </label><br/>
+                      <label for="a2_2"><input id="a2_2" type="radio" name="a2" value="a2_2" > <span> item </span></label><br/>
+                      <label for="a2_3"><input id="a2_3" type="radio" name="a2" value="a2_3" > <span> item </span> </label><br/>
+                  </form>
+                </div>
+                <div id="ok__button_wrap">
+                  <a href="#">search</a>
+                </div>
+                <div class="selectableOption">
+                  <form>
+                      <label for="a3_1"><input id="a3_1" type="radio" name="a3" value="a3_1" checked> <span> item </span> </label><br/>
+                      <label for="a3_2"><input id="a3_2" type="radio" name="a3" value="a3_2" > <span> item </span> </label><br/>
+                      <label for="a3_3"><input id="a3_3" type="radio" name="a3" value="a3_3" ><span> item </span> </label><br/>
+                  </form>
+                  <form>
+                      <label for="a4_1"><input id="a4_1" type="radio" name="a4" value="a4_1" checked><span> item </span> </label><br/>
+                      <label for="a4_2"><input id="a4_2" type="radio" name="a4" value="a4_2" > <span> item </span> </label><br/>
+                      <label for="a4_3"><input id="a4_3" type="radio" name="a4" value="a4_3" > <span> item </span> </label><br/>
+                  </form>
+                </div>
+
+          </div>
+
+    </div>
+
+  </nav>
+
+</div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $( "#mainMenu__button" ).click(function() {
+    $("#mainMenu__button").addClass( "none" );
+    $( "#mainMenu__selectableOption" ).toggleClass( "flex" );
+  });
+  $( "#ok__button_wrap a" ).click(function() {
+    $("#mainMenu__button").removeClass( "none" );
+    $( "#mainMenu__selectableOption" ).toggleClass( "flex" );
+  });
+  </script>
+</html>
