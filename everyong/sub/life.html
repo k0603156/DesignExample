@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="../images/favicon1.ico">
+<title>에버영코리아</title>
+<style>
+* { margin:0; padding:0;}
+img { border:0;}
+a { text-decoration:none;}
+li { list-style:none;}
+
+#main_header { width:100%; border-bottom:2px solid #81b4af;}
+#head { width:1000px; margin:0 auto; height:90px; position:relative}
+#logo { float:left; margin-top:20px;}
+
+#gnb { float:left; margin-top:40px; margin-left:100px;}
+#gnb ul { overflow:hidden;}
+#gnb ul li { float:left;}
+#gnb ul li a { font:700 18px "나눔고딕"; color:#555; display:block; padding:2px 15px;}
+#gnb ul li a:hover { color:#006658;}
+
+#lnb { float:right; margin-top:42px;}
+#lnb ul { overflow:hidden;}
+#lnb ul li { float:left;}
+#lnb ul li:nth-child(2) { font:10px "돋움"; color:#999; padding-top:4px;}
+#lnb ul li a { font:700 12px "나눔고딕"; color:#555; display:block; padding:2px 5px;}
+#lnb ul li a:hover { color:#006658;}
+
+/* slide */
+#main_slide { width:1920px; height:150px; margin:0 auto;}
+
+/* main_section */
+#wrap { width:1000px; margin:30px auto; overflow:hidden;}
+#sub_aside { width:190px; float:left;}
+
+#sub_aside > ul > li:first-child { font:27px "나눔바른고딕"; color:#006658; padding-bottom:25px; border-bottom:3px solid #77b259;}
+#sub_aside > ul > li a { display:block; font:16px "나눔바른고딕"; color:#333}
+#sub_aside > ul > li ~ li { border-bottom:1px solid #d1d1d1; padding:7px 0;}
+#sub_aside > ul > li a span { display:none; float:right; font-weight:700; }
+
+#sub_aside > ul > li a:hover { color:#77b259;}
+#sub_aside > ul > li a:hover span { display:block;}
+#sub_aside > ul > li:nth-child(2) a { color:#77b259;}
+#sub_aside > ul > li:nth-child(2) a span { display:block;}
+
+#sub_aside > ul > li:nth-child(3) { background:#fafafa;}
+#sub_aside > ul > li:nth-child(3) > .sub_menu li a { display:block; font:11px "나눔바른고딕"; padding:5px 0 5px 10px;}
+#sub_aside > ul > li:nth-child(3) > .sub_menu li:nth-child(1) a span { display:block; color:#77b259;}
+#sub_aside > ul > li:nth-child(3) > .sub_menu li a span { font:700 16px "나눔바른고딕"; margin-top:-5px;}
+
+/* sub_section */
+#sub_section { width:770px; float:right;}
+.article_1 p:first-child { font:30px "나눔바른고딕"; color:#333; margin-bottom:50px;}
+.text { text-align:center;}
+.article_1 p:nth-child(2) { font:200 27px "나눔바른고딕"; color:#006658;}
+.article_1 p:nth-child(3) { font:700 40px "나눔바른고딕"; color:#77b259; margin-bottom:7px;}
+.article_1 p:nth-child(4) { font:14px "나눔바른고딕"; color:#666; letter-spacing:1.5px}
+
+.article_2 { width:700px; margin:20px auto; border-top:1px solid #77b259;}
+.article_2 p { font:12px "돋움"; color:#222; text-align:center; padding:10px 0; line-height:1.4}
+
+.article_2 ul.img { overflow:hidden; margin-top:40px; margin-left:30px;}
+.article_2 ul.img li {float:left; margin-bottom:40px;}
+.article_2 ul.img li:nth-child(2n+1) { margin-right:40px;}
+
+
+
+/* footer */
+#main_footer { width:1000px; margin:0 auto 30px; height:150px; position:relative}
+#bottom_logo { float:left; margin-top:25px;}
+
+#copyright { float:left; margin-left:50px; margin-top:50px;}
+#copyright ul.bottom_gnb { overflow:hidden;}
+#copyright ul.bottom_gnb li { float:left; margin-right:15px;}
+#copyright ul.bottom_gnb a { font:700 14px "돋움"; color:#333;} 
+
+#copyright ul.copy { margin-top:20px;}
+#copyright ul.copy li { font:13px "돋움"; color:#999;}
+#copyright ul.copy li:last-child { margin-top:10px;}
+
+#blog { float:right; margin-top:50px;}
+.blog_cafe li { float:left;}
+.blog_cafe li a { display:block; font:700 35px "나눔손글씨 펜"; color:#999;}
+.blog_cafe li a:hover { color:#333;}
+.blog_cafe li:nth-child(2) { margin-top:15px; font:35px "돋움"; color:#d1d1d1; }
+.blog_cafe li:nth-child(3) { margin-top:30px;}
+</style>
+</head>
+
+<body>
+<header id="main_header">
+  <header id="head">
+    <div id="logo">
+      <img src="../images/logo.png">
+    </div>
+    <nav id="gnb">
+      <ul>
+        <li><a href="#">에버영코리아</a></li>
+        <li><a href="sub.html">사업</a></li>
+        <li><a href="#">소식</a></li>
+        <li><a href="#">채용</a></li>
+        <li><a href="#">사회공헌</a></li>
+      </ul>
+    </nav><!-- GNB end -->
+    
+    <nav id="lnb">
+      <ul>
+        <li><a href="#">SITE MAP</a></li>
+        <li>/</li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav><!-- LNB end -->
+  </header><!-- header(width:1000px) end -->
+</header><!-- header(width:100%) end -->
+
+<div id="sub_slide">
+  <img src="images/slide2.jpg">
+</div><!-- slide end -->
+
+<section id="wrap">
+  <aside id="sub_aside">
+    <ul>
+      <li>채용</li>
+      <li><a href="#">복리후생 <span>-</span></a></li>
+      <li>
+        <ul class="sub_menu">
+          <li><a href="#">회사생활 <span>-</span></a></li>
+          <li><a href="#">건강 <span>-</span></a></li>
+          <li><a href="#">휴가 <span>-</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#">채용안내 <span>-</span></a></li>
+      <li><a href="#">인재뱅크 <span>-</span></a></li>
+      <li><a href="#">입사지원 <span>-</span></a></li>
+    </ul>
+  </aside><!-- sub_aside end -->
+  
+  <section id="sub_section">
+    <article class="article_1">
+      <p>즐거운 에버영</p>
+      <p class="text">세상에서 제일좋은</p>
+      <p class="text">사회적 기업</p>
+      <p class="text">The Best Social Enterprise In The World</p>
+    </article><!-- article_1 end -->
+    
+    <article class="article_2">
+      <p>
+        에버영코리아는 시니어 고용의 새로운 시장확대, 시니어의 사회적 역할 확산을 위한<br>
+        초석을 마련하기 위해 전 임직원을 대상으로 VISION을 선포하고 공유하였습니다.
+      </p>
+      <ul class="img">
+        <li><img src="images/bg_vision_1.png"></li>
+        <li><img src="images/bg_vision_2.png"></li>
+        <li><img src="images/bg_vision_3.png"></li>
+        <li><img src="images/bg_vision_4.png"></li>
+      </ul>
+    </article><!-- article_2 end -->
+  </section><!-- sub_section end -->
+  
+</section><!-- wrap end -->
+
+<footer id="main_footer">
+  <div id="bottom_logo">
+    <img src="../images/bottom_logo.png">
+  </div>
+  
+  <div id="copyright">
+    <ul class="bottom_gnb">
+      <li><a href="#">제휴제안</a></li>
+      <li>/</li>
+      <li><a href="#">개인정보취급방침</a></li>
+    </ul>
+    
+    <ul class="copy">
+      <li>주소 : 서울특별시 은평구 은평로 180(응암동) 라익빌딩 3 (우) 03471</li>
+      <li>대표이사 : 정은성   사업자등록번호 : 132-86-20646   이메일문의 : everyoung@everyoungkorea.com</li>
+      <li>Copyright Everyoung Korea Corp. All Rights Reserved. </li>
+    </ul>
+  </div>
+  
+  <div id="blog">
+    <ul class="blog_cafe">
+      <li><a href="#">블로그</a></li>
+      <li>/</li>
+      <li><a href="#">카페</a></li>
+    </ul>
+  </div>
+</footer><!-- main_footer end -->
+
+</body>
+</html>
